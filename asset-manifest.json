@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/Job-Freak-Task/static/css/main.a774cfab.css",
+    "main.js": "/Job-Freak-Task/static/js/main.77ce5bed.js",
+    "static/js/787.2e461eb7.chunk.js": "/Job-Freak-Task/static/js/787.2e461eb7.chunk.js",
+    "static/media/guide.svg": "/Job-Freak-Task/static/media/guide.5efe273ced9acd89924c8b154cc00ff1.svg",
+    "static/media/cross.svg": "/Job-Freak-Task/static/media/cross.2d8e4ddca8b7d4e26016f5666b6b2c20.svg",
+    "static/media/info.svg": "/Job-Freak-Task/static/media/info.471572853e5510dbce8e786f81c6e55a.svg",
+    "static/media/conatct.svg": "/Job-Freak-Task/static/media/conatct.431baaf727ed6285fa754a8eefe856b2.svg",
+    "index.html": "/Job-Freak-Task/index.html",
+    "static/media/home.svg": "/Job-Freak-Task/static/media/home.9d9898c74243341d980c03e1e9f9a421.svg",
+    "static/media/hamburger.svg": "/Job-Freak-Task/static/media/hamburger.8969bab1a15061443d55a2630250f4b8.svg",
+    "main.a774cfab.css.map": "/Job-Freak-Task/static/css/main.a774cfab.css.map",
+    "main.77ce5bed.js.map": "/Job-Freak-Task/static/js/main.77ce5bed.js.map",
+    "787.2e461eb7.chunk.js.map": "/Job-Freak-Task/static/js/787.2e461eb7.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a774cfab.css",
+    "static/js/main.77ce5bed.js"
+  ]
+}
