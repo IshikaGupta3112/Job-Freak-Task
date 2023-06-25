@@ -6,7 +6,7 @@ return (
         <li>Home</li>
         <li>Information</li>
         <li>Guide</li>
-        <li>Contact</li>
+        <li>Contacts</li>
     </ul>
     <br></br>
     It has a fixed sidebar having all the sections links. As i click on any of the link then it is visible in the remaining part of the screen.<br></br>
