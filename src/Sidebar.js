@@ -25,6 +25,10 @@ function Sidebar() {
     setHome(false);
     setContact(false);
     setGuide(false);
+    document.getElementById('infoLi').style.backgroundColor="rgb(69, 183, 228 , 0.1)";
+    document.getElementById('homeLi').style.backgroundColor="white";
+    document.getElementById('contactLi').style.backgroundColor="white";
+    document.getElementById('guideLi').style.backgroundColor="white";
   }, [j]);
   useEffect(() => {
     setTitle("Guide");
@@ -32,6 +36,10 @@ function Sidebar() {
     setHome(false);
     setContact(false);
     setInfo(false);
+    document.getElementById('guideLi').style.backgroundColor="rgb(69, 183, 228 , 0.1)";
+    document.getElementById('homeLi').style.backgroundColor="white";
+    document.getElementById('contactLi').style.backgroundColor="white";
+    document.getElementById('infoLi').style.backgroundColor="white";
   }, [k]);
   useEffect(() => {
     setTitle("Contact");
@@ -39,6 +47,10 @@ function Sidebar() {
     setHome(false);
     setInfo(false);
     setGuide(false);
+    document.getElementById('contactLi').style.backgroundColor="rgb(69, 183, 228 , 0.1)";
+    document.getElementById('homeLi').style.backgroundColor="white";
+    document.getElementById('guideLi').style.backgroundColor="white";
+    document.getElementById('infoLi').style.backgroundColor="white";
   }, [l]);
   useEffect(() => {
     setTitle("Home");
@@ -46,6 +58,10 @@ function Sidebar() {
     setContact(false);
     setInfo(false);
     setGuide(false);
+    document.getElementById('homeLi').style.backgroundColor="rgb(69, 183, 228 , 0.1)";
+    document.getElementById('contactLi').style.backgroundColor="white";
+    document.getElementById('guideLi').style.backgroundColor="white";
+    document.getElementById('infoLi').style.backgroundColor="white";
   }, [i]);
 
   const [home, setHome] = useState(true);
@@ -54,29 +70,39 @@ function Sidebar() {
   const [contact, setContact] = useState(false);
 
 function showmenu(){
-    document.getElementById('sideDiv').style.width="75vw";
+    document.getElementById('sideDiv').style.width="80vw";
+}
+function closemenu(){
+  document.getElementById('sideDiv').style.width="0vw";
 }
 
   return (
     <>
+    <div id='sideDiv'><img src={cross} id='crossimg' onClick={closemenu}></img>
+    <ul>
+      <li onClick={()=>setI(!i)}>Home</li>
+      <li onClick={() => setJ(!j)}>Information</li>
+      <li onClick={() => setK(!k)}>Guide</li>
+      <li onClick={() => setL(!l)}>Contact</li>
+    </ul>
+    </div>
       <div id="navdiv">
-        <div id="menuDiv"><h2>Job Freak</h2></div>
-        <div id='titleDiv'><h4>{title}</h4></div>
+<h2>Job Freak</h2>
         <img src={hamburger} id='menu' onClick={showmenu}></img>
       </div>
       <div id="flexDiv">
         <div id="sidebarDiv">
           <ul>
-            <li onClick={() => setI(!i)}>
+          <li onClick={() => setI(!i) } id='homeLi'>
               <img src={homeLogo}></img>Home
             </li>
-            <li onClick={() => setJ(!j)}>
+            <li onClick={() => setJ(!j)} id='infoLi'>
               <img src={infoLogo}></img>Information
             </li>
-            <li onClick={() => setK(!k)}>
+            <li onClick={() => setK(!k)} id='guideLi'>
               <img src={guideLogo}></img>Guide
             </li>
-            <li onClick={() => setL(!l)}>
+            <li onClick={() => setL(!l)} id='contactLi'>
               <img src={contactLogo}></img>Contact
             </li>
           </ul>
