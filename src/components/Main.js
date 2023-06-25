@@ -1,10 +1,10 @@
-import "./Sidebar.css";
-import homeLogo from "./assets/home.svg";
-import contactLogo from "./assets/conatct.svg";
-import guideLogo from "./assets/guide.svg";
-import infoLogo from "./assets/info.svg";
-import hamburger from "./assets/hamburger.svg";
-import cross from "./assets/cross.svg";
+import "./Main.css";
+import homeLogo from "../assets/home.svg";
+import contactLogo from "../assets/conatct.svg";
+import guideLogo from "../assets/guide.svg";
+import infoLogo from "../assets/info.svg";
+import hamburger from "../assets/hamburger.svg";
+import cross from "../assets/cross.svg";
 import Home from "./Home";
 import Contact from "./Contact";
 import Guide from "./Guide";
@@ -12,7 +12,7 @@ import Info from "./Info";
 import { useState } from "react";
 import { useEffect } from "react";
 
-function Sidebar() {
+function Main() {
   const [i, setI] = useState(false);
   const [j, setJ] = useState(false);
   const [k, setK] = useState(false);
@@ -118,4 +118,4 @@ function closemenu(){
   );
 }
 
-export default Sidebar;
+export default Main;
